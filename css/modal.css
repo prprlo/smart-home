@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+}
+
+.modal {
+    display: none;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.5);
+
+    align-items: center;
+    justify-content: center;
+
+    z-index: 1000;
+}
+
+.modal.open {
+    display: flex;
+}
+
+.modal-card {
+    width: 413px;
+    min-height: 684px;
+
+    padding: 30px;
+
+    position: relative;
+
+    background-color: #FFFFFF;
+    border-radius: 20px;
+}
+
+.modal-close {
+    position: absolute;
+    top: 18px;
+    right: 20px;
+
+    padding: 0;
+
+    border: none;
+    background: none;
+
+    color: #1A1A1A;
+    font-size: 30px;
+
+    cursor: pointer;
+}
+
+.modal-card h2 {
+    margin: 0 0 55px;
+
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.consultation-form {
+    width: 353px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-field label {
+    font-size: 14px;
+    font-weight: 400;
+
+    color: rgba(26, 26, 26, 0.8);
+}
+
+.form-field input {
+    width: 353px;
+    height: 60px;
+
+    padding: 0 20px;
+
+    border: 3px solid #728BAD;
+    border-radius: 20px;
+    outline: none;
+
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+
+    color: #1A1A1A;
+}
+
+.form-field input::placeholder {
+    color: rgba(26, 26, 26, 0.7);
+}
+
+.submit-button {
+    width: 280px;
+    height: 60px;
+
+    margin: 0 auto;
+
+    border: none;
+    border-radius: 10px;
+
+    background-color: #E98736;
+    color: #FFFFFF;
+
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.privacy-text {
+    margin: -10px 0 0;
+
+    text-align: center;
+
+    font-size: 10px;
+    line-height: 1.2;
+
+    color: rgba(26, 26, 26, 0.7);
+}
+
+.input-error {
+    border-color: #FF3347 !important;
+}
+
+.error-message {
+    margin: 4px 0 0;
+
+    font-size: 12px;
+    color: #FF3347;
+}
