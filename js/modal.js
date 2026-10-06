@@ -59,7 +59,9 @@ function clearErrors() {
         message.remove();
     });
 
-    const inputs = document.querySelectorAll(".form-field input");
+    const inputs = document.querySelectorAll(
+        ".form-field input, .calculation-field input"
+    );
 
     inputs.forEach(function (input) {
         input.classList.remove("input-error");

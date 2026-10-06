@@ -42,46 +42,46 @@
 
     <section class="features" id="features">
 
-    <div class="features-content">
+        <div class="features-content">
 
-        <h2 class="features-title">Возможности</h2>
+            <h2 class="features-title">Возможности</h2>
 
-        <p class="features-description">
-            Полный контроль дома: умные замки с NFC, датчики протечек
-            с автоматическим отключением воды и видеонаблюдение
-            с оповещениями в реальном времени. Ваша безопасность —
-            наша приоритетная задача.
-        </p>
+            <p class="features-description">
+             Полный контроль дома: умные замки с NFC, датчики протечек
+                с автоматическим отключением воды и видеонаблюдение
+                с оповещениями в реальном времени. Ваша безопасность —
+                наша приоритетная задача.
+            </p>
 
-        <div class="features-buttons">
-            <button class="feature-button active" data-feature="security">
-                Безопасность
-            </button>
+            <div class="features-buttons">
+                <button class="feature-button active" data-feature="security">
+                    Безопасность
+                </button>
 
-            <button class="feature-button" data-feature="light">
-                Освещение
-            </button>
+                <button class="feature-button" data-feature="light">
+                    Освещение
+                </button>
 
-            <button class="feature-button" data-feature="climate">
-                Климат
-            </button>
+                <button class="feature-button" data-feature="climate">
+                    Климат
+                </button>
 
-            <button class="feature-button" data-feature="devices">
-                Умная техника
-            </button>
+                <button class="feature-button" data-feature="devices">
+                    Умная техника
+                </button>
 
-            <button class="feature-button" data-feature="curtains">
-                Шторы/жалюзи
-            </button>
+                <button class="feature-button" data-feature="curtains">
+                    Шторы/жалюзи
+                </button>
 
-            <button class="feature-button" data-feature="energy">
-                Энергосбережение
-            </button>
+                <button class="feature-button" data-feature="energy">
+                    Энергосбережение
+                </button>
+            </div>
+
         </div>
 
-    </div>
-
-</section>
+    </section>
 
 <section class="scenarios">
 
@@ -100,8 +100,11 @@
                     имитируя рассвет.
                 </p>
             </div>
+            
+            <div class="scenario-image">
+                <img src="images/morning.jpg" alt="Утро без стресса">
+            </div>
 
-            <img src="images/morning.jpg" alt="Утро без стресса">
         </div>
 
         <!-- 2 строка -->
@@ -225,38 +228,86 @@
 
     <div class="calculation-content">
 
-        <h3>Где вы хотите установить умный дом?</h3>
-
-        <div class="calculation-options">
-
-            <label>
-                <input type="checkbox" name="place" value="flat">
-                Квартира
-            </label>
-
-            <label>
-                <input type="checkbox" name="place" value="office">
-                Офис
-            </label>
-
-            <label>
-                <input type="checkbox" name="place" value="house">
-                Дом
-            </label>
-
-            <label>
-                <input type="checkbox" name="place" value="other">
-                Другое
-            </label>
-
+        <div class="calculation-quiz">
+            <h3 class="calculation-question"></h3>
+            
+            <div class="calculation-options"></div>
+            
+            <p class="calculation-hint" hidden>
+                *Отметьте один или несколько вариантов
+            </p>
         </div>
 
-        <div class="calculation-footer">
-            <span>Шаг 1/4</span>
+        <form class="calculation-form" novalidate hidden>
+            <p class="calculation-description">
+                Спасибо за Ваши ответы! Оставьте свои контактные данные ниже — наш специалист свяжется с вами в ближайшее время, чтобы обсудить детали и предложить индивидуальное решение по выгодной цене.
+            </p>
 
-            <button class="next-button">
-                Далее
+            <p class="calculation-description">
+                Если у вас есть дополнительные пожелания или вопросы, пожалуйста, укажите их ниже.
+            </p>
+
+            <textarea 
+            class="calculation-comment" 
+            placeholder="Ваши комментарии или уточнения..."
+            ></textarea>
+
+            <div class="calculation-fields">
+                
+                <div class="calculation-field">
+                    <label for="form-name">Ваше ФИО*</label>
+                    <input 
+                        id="form-name" 
+                        name="name"
+                        type="text"
+                        placeholder="Введите ФИО">
+                    </div>
+
+                <div class="calculation-field">
+                    <label for="form-tel">Телефон*</label>
+                    <input 
+                        id="form-tel" 
+                        name="phone"
+                        type="tel"
+                        placeholder="Введите номер">
+                </div>
+
+                <div class="calculation-field">
+                    <label for="form-email">Почта*</label>
+                    <input 
+                        id="form-email" 
+                        name="email"
+                        type="email"
+                        placeholder="Введите email">
+                </div>
+            </div>
+
+            <button
+                class="calculation-submit" 
+                type="submit"
+            >Получить расчет
             </button>
+
+            <p class="calculation-privacy">
+                Нажимая на кнопку, Вы подтверждаете согласие 
+                на обработку персональных данных, согласно 
+                <u>политике конфиденциальности</u>
+            </p>
+
+        </form>
+
+        <div class="calculation-footer">
+            <span class="calculation-step"></span>
+
+            <div class="calculation-buttons">
+                <button class="back-button" hidden>
+                    Назад
+                </button>
+                
+                <button class="next-button">
+                    Далее
+                </button>
+            </div>
         </div>
 
     </div>
@@ -289,19 +340,52 @@
     </div>
 
     <div class="contacts-info">
+
         <h2>КОНТАКТЫ</h2>
 
-        <h3>Телефон</h3>
-        <p>+7-800-555-35-35</p>
+        <div class="contacts-list">
 
-        <h3>Почта</h3>
-        <p>smart.home@mail.ru</p>
+            <div class="contact-item">
+                <h3>Телефон</h3>
+                <p>
+                    <a href="tel:+78005553535">+7-800-555-35-35</a>
+                </p>
+            </div>
 
-        <h3>Адрес</h3>
-        <p>
-            СПбГЭТУ ЛЭТИ имени В.И. Ульянова Ленина,
-            Инструментальная ул., 2
-        </p>
+            <div class="contact-item">
+                <h3>Почта</h3>
+                <p>
+                    <a href="mailto:smart.home@mail.ru">smart.home@mail.ru</a>
+                </p>
+            </div>
+
+            <div class="contact-item">
+                <h3>Адрес</h3>
+                <p>
+                    СПбГЭТУ ЛЭТИ имени В.И. Ульянова Ленина,<br>
+                    Инструментальная ул., 2
+                </p>
+            </div>
+
+        </div>
+
+        <div class="contacts-social">
+            <a href="tel:+78005553535">
+                <img src="images/phone.svg" alt="Телефон">
+            </a>
+            <a href="https://t.me/">
+                <img src="images/telegram.svg" alt="Telegram">
+            </a>
+
+            <a href="https://wa.me/">
+                <img src="images/whatsapp.svg" alt="WhatsApp">
+            </a>
+
+            <a href="mailto:smart.home@mail.ru">
+                <img src="images/email.svg" alt="Почта">
+            </a>
+        </div>
+
     </div>
 
 </section>
@@ -318,11 +402,59 @@
         <a href="#contacts">Контакты</a>
     </nav>
 
-</footer>
+    <div class="footer-social">
+        <a href="tel:+78005553535">
+            <img src="images/phonealt.svg" alt="Телефон">
+        </a>
 
+        <a href="https://t.me/USERNAME">
+            <img src="images/telegramalt.svg" alt="Telegram">
+        </a>
+
+        <a href="https://wa.me/78005553535">
+            <img src="images/whatsappalt.svg" alt="WhatsApp">
+        </a>
+
+        <a href="mailto:smart.home@mail.ru">
+            <img src="images/emailalt.svg" alt="Почта">
+        </a>
+    </div>
+
+</footer>
 
 </main>
 
+<div class="contact-widget">
+
+    <button class="contact-widget-button" type="button">
+        <img src="images/chat.svg" alt="Связь">
+    </button>
+
+    <div class="contact-widget-menu" hidden>
+
+        <a href="tel:+78005553535">
+            <img src="images/phone.svg" alt="Телефон">
+        </a>
+
+        <a href="https://t.me/USERNAME">
+            <img src="images/telegram.svg" alt="Telegram">
+        </a>
+
+        <a href="https://wa.me/78005553535">
+            <img src="images/whatsapp.svg" alt="WhatsApp">
+        </a>
+
+        <a href="mailto:smart.home@mail.ru">
+            <img src="images/email.svg" alt="Почта">
+        </a>
+
+        <button class="contact-widget-close" type="button">
+            <img src="images/close.svg" alt="Закрыть">
+        </button>
+
+    </div>
+
+</div>
 
 <div class="modal" id="consultation-modal" hidden>
     <div class="modal-card">
